@@ -1,10 +1,10 @@
-export const TodoItem = ({ todo, dispatch }) => {
+export const TodoItem = ({ todo, onDeleteTodo }) => {
     return (
         <li className="list-group-item d-flex justify-content-between" >
             <span> {todo.description} </span>
             <button
                 className="btn btn-danger"
-                onClick={() => dispatch({ type: '[TODO] Remove Todo', payload: todo })}
+                onClick={() => onDeleteTodo(todo.id)}
             >
                 Borrar
             </button>

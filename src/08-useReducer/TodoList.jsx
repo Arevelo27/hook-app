@@ -1,6 +1,6 @@
 import { TodoItem } from "./TodoItem"
 
-export const TodoList = ({ todos = [], dispatch }) => {
+export const TodoList = ({ todos = [], onDeleteTodo }) => {
     return (
         <ul className="list-group list-group-flush">
             {
@@ -9,7 +9,7 @@ export const TodoList = ({ todos = [], dispatch }) => {
                     <TodoItem
                         key={todo.id}
                         todo={todo}
-                        dispatch={dispatch}
+                        onDeleteTodo={onDeleteTodo}
                     />
                 ))
             }
