@@ -1,9 +1,12 @@
-export const todoReducer = ( initialState = [], action) => {
+export const todoReducer = (initialState = [], action) => {
 
     switch (action.type) {
-        case 'agregar':
-            // return [...state, action.payload];
-            return new Error('No se han podido agregar');
+        case '[TODO] Add Todo':
+            return [...initialState, action.payload];
+
+        case '[TODO] Remove Todo':
+            return initialState.filter(todo => todo.id !== action.payload);
+
         default:
             return initialState;
     }
