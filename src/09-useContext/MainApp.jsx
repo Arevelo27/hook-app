@@ -4,7 +4,7 @@ import { HomePage, AboutPage, LoginPage, NavBar } from '../09-useContext';
 export const MainApp = () => {
     return (
         <>
-            <h1>MainApp</h1>
+            {/* <h1>MainApp</h1> */}
             <NavBar/>
             <hr />
 
