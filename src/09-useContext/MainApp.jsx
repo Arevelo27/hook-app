@@ -1,10 +1,11 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
-import { HomePage, AboutPage, LoginPage } from '../09-useContext';
+import { HomePage, AboutPage, LoginPage, NavBar } from '../09-useContext';
 
 export const MainApp = () => {
     return (
         <>
             <h1>MainApp</h1>
+            <NavBar/>
             <hr />
 
             <Routes>
