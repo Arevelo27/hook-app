@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en el <MultipleCustomHooks> debe de hacer match con el snapshot 1`] = `
+<div>
+  <div>
+    <h1>
+      Información de Pokemón
+    </h1>
+    <hr />
+    <section
+      class="alert alert-info text-center p-0 m-0 d-flex justify-content-center align-items-center"
+      style="height: 200px;"
+    >
+      <h1>
+        Cargando
+      </h1>
+    </section>
+    <h2 />
+    <button
+      class="btn btn-primary mt-2"
+    >
+      Anterior
+    </button>
+    <button
+      class="btn btn-primary mt-2"
+      disabled=""
+    >
+      Siguiente
+    </button>
+  </div>
+</div>
+`;
